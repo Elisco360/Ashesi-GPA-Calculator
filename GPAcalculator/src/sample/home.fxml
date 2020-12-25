@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="528.0" prefWidth="707.0" stylesheets="@../css/fullpackstyling.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.HomeController">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" stylesheets="@../css/fullpackstyling.css">
+         <children>
+            <BorderPane fx:id="mainPane" prefHeight="528.0" prefWidth="707.0">
+               <center>
+                  <Pane prefHeight="528.0" prefWidth="522.0" style="-fx-background-color: #FFF;" BorderPane.alignment="CENTER">
+                     <children>
+                        <Circle layoutX="161.0" layoutY="289.0" radius="8.0" stroke="WHITE" strokeType="INSIDE">
+                           <fill>
+                              <LinearGradient endX="1.0" endY="1.0" startX="0.5496183197006924">
+                                 <stops>
+                                    <Stop color="#fffb1ffb" />
+                                    <Stop color="WHITE" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </fill>
+                        </Circle>
+                        <ImageView fitHeight="228.0" fitWidth="228.0" layoutX="146.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/Welcome.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="185.0" layoutY="25.0" prefHeight="52.0" prefWidth="150.0" text="Welcome" textFill="#4f0c51">
+                           <font>
+                              <Font name="Kristen ITC" size="33.0" />
+                           </font>
+                        </Label>
+                        <Circle layoutX="294.0" layoutY="165.0" radius="5.0" stroke="WHITE" strokeType="INSIDE">
+                           <fill>
+                              <LinearGradient endX="1.0" endY="1.0" startX="0.5496183197006924">
+                                 <stops>
+                                    <Stop color="#fffb1ffb" />
+                                    <Stop color="WHITE" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </fill>
+                        </Circle>
+                        <Circle layoutX="231.0" layoutY="401.0" radius="13.0" stroke="WHITE" strokeType="INSIDE">
+                           <fill>
+                              <LinearGradient endX="1.0" endY="1.0" startX="0.5496183197006924">
+                                 <stops>
+                                    <Stop color="#fffb1ffb" />
+                                    <Stop color="WHITE" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </fill>
+                        </Circle>
+                        <Circle layoutX="199.0" layoutY="160.0" radius="19.0" stroke="WHITE" strokeType="INSIDE">
+                           <fill>
+                              <LinearGradient endX="1.0" endY="1.0" startX="0.5496183197006924">
+                                 <stops>
+                                    <Stop color="#fffb1ffb" />
+                                    <Stop color="WHITE" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </fill>
+                        </Circle>
+                        <Circle layoutX="399.0" layoutY="218.0" radius="13.0" stroke="WHITE" strokeType="INSIDE">
+                           <fill>
+                              <LinearGradient endX="1.0" endY="1.0" startX="0.5496183197006924">
+                                 <stops>
+                                    <Stop color="#fffb1ffb" />
+                                    <Stop color="WHITE" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </fill>
+                        </Circle>
+                        <Circle layoutX="399.0" layoutY="348.0" radius="19.0" stroke="WHITE" strokeType="INSIDE">
+                           <fill>
+                              <LinearGradient endX="1.0" endY="1.0" startX="0.5496183197006924">
+                                 <stops>
+                                    <Stop color="#fffb1ffb" />
+                                    <Stop color="WHITE" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </fill>
+                        </Circle>
+                        <Circle layoutX="115.0" layoutY="231.0" radius="19.0" stroke="WHITE" strokeType="INSIDE">
+                           <fill>
+                              <LinearGradient endX="1.0" endY="1.0" startX="0.5496183197006924">
+                                 <stops>
+                                    <Stop color="#fffffffa" />
+                                    <Stop color="#bd1167" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </fill>
+                        </Circle>
+                        <Circle layoutX="322.0" layoutY="175.0" radius="13.0" stroke="WHITE" strokeType="INSIDE">
+                           <fill>
+                              <LinearGradient endX="1.0" endY="1.0" startX="0.5496183197006924">
+                                 <stops>
+                                    <Stop color="#fffffffa" />
+                                    <Stop color="#bd1167" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </fill>
+                        </Circle>
+                        <Circle layoutX="115.0" layoutY="334.0" radius="5.0" stroke="WHITE" strokeType="INSIDE">
+                           <fill>
+                              <LinearGradient endX="1.0" endY="1.0" startX="0.5496183197006924">
+                                 <stops>
+                                    <Stop color="#fffffffa" />
+                                    <Stop color="#bd1167" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </fill>
+                        </Circle>
+                        <Circle layoutX="366.0" layoutY="289.0" radius="8.0" stroke="WHITE" strokeType="INSIDE">
+                           <fill>
+                              <LinearGradient endX="1.0" endY="1.0" startX="0.5496183197006924">
+                                 <stops>
+                                    <Stop color="#fffffffa" />
+                                    <Stop color="#bd1167" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </fill>
+                        </Circle>
+                        <Label layoutX="417.0" layoutY="492.0" text="GPA" textFill="#320a33">
+                           <font>
+                              <Font name="Segoe UI" size="21.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="460.0" layoutY="498.0" prefHeight="20.0" prefWidth="54.0" text="Calculator" textFill="#320a33">
+                           <font>
+                              <Font name="Microsoft PhagsPa" size="11.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="33.0" fitWidth="85.0" layoutX="381.0" layoutY="489.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/Ashesi.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+               </center>
+               <left>
+                  <Pane prefHeight="429.0" prefWidth="188.0" style="-fx-background-color: #FFF;" BorderPane.alignment="CENTER">
+                     <children>
+                        <VBox layoutY="113.0" prefHeight="416.0" prefWidth="188.0" style="-fx-background-color: #4B0082; -fx-background-radius: 0 30 0 0;" stylesheets="@../css/fullpackstyling.css">
+                           <children>
+                              <Pane prefHeight="51.0" prefWidth="188.0" />
+                              <Button fx:id="gpa" mnemonicParsing="false" onAction="#handleGPAClick" prefHeight="56.0" prefWidth="194.0" text="Calculate GPA" textFill="WHITE">
+                                 <graphic>
+                                    <ImageView fitHeight="31.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icons/Sgpa.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic></Button>
+                              <Button fx:id="cgpa" mnemonicParsing="false" onAction="#handleCGPAClick" prefHeight="56.0" prefWidth="193.0" text="Calculate CGPA" textFill="WHITE">
+                                 <graphic>
+                                    <ImageView fitHeight="26.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icons/Cgpa.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic></Button>
+                              <Button fx:id="about" mnemonicParsing="false" onAction="#handleInfoClick" prefHeight="56.0" prefWidth="192.0" text="More Information" textFill="WHITE">
+                                 <graphic>
+                                    <ImageView fitHeight="21.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icons/Info.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic></Button>
+                              <Pane prefHeight="172.0" prefWidth="188.0">
+                                 <children>
+                                    <Label layoutX="70.0" layoutY="173.0" prefHeight="20.0" prefWidth="47.0" text="Version 2.1" textFill="#b2b2b2">
+                                       <font>
+                                          <Font name="Microsoft PhagsPa" size="8.5" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </VBox>
+                        <Pane prefHeight="107.0" prefWidth="188.0" style="-fx-background-color: #FFF;">
+                           <children>
+                              <ImageView fitHeight="97.0" fitWidth="107.0" layoutX="38.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icons/Ashesi.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                     </children>
+                  </Pane>
+               </left>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>

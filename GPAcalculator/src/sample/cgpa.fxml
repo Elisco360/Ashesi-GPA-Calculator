@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="528.0" prefWidth="522.0" style="-fx-background-color: #FFF;" stylesheets="@../css/fullpackstyling.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.cgpaController">
+   <children>
+      <Pane prefHeight="78.0" prefWidth="522.0" style="-fx-background-color: #FFF;">
+         <children>
+            <Text fill="#4d0194" fontSmoothingType="LCD" layoutX="108.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cumulative GPA Calculator" textAlignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Emoji" size="26.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="31.0" layoutY="100.0" opacity="0.08" prefHeight="330.0" prefWidth="461.0" style="-fx-background-color: #ff47f2;">
+         <effect>
+            <Lighting bumpInput="$null">
+               <light>
+                  <Light.Distant color="#4800ff" />
+               </light>
+            </Lighting>
+         </effect>
+      </Pane>
+      <ComboBox fx:id="semE1" layoutX="92.0" layoutY="121.0" onAction="#handleSemOne" prefHeight="26.0" prefWidth="200.0" promptText="Choose Semester" />
+      <TextField fx:id="semGpa1" alignment="CENTER" layoutX="326.0" layoutY="122.0" onAction="#handleEnterGPA1" onKeyTyped="#handleEnterGPA1" prefHeight="26.0" prefWidth="98.0" promptText="Enter Your GPA" />
+      <Button layoutX="19.0" layoutY="424.0" mnemonicParsing="false" onAction="#handleCalculateCGPA" prefHeight="32.0" prefWidth="487.0" text="Calculate CGPA" textFill="WHITE" />
+      <Text fx:id="cAvg" fill="#393939" layoutX="239.0" layoutY="508.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0.0">
+         <font>
+            <Font name="Baskerville Old Face" size="52.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="semE2" layoutX="92.0" layoutY="156.0" onAction="#handleSemTwo" prefHeight="26.0" prefWidth="200.0" promptText="Choose Semester" />
+      <ComboBox fx:id="semE3" layoutX="92.0" layoutY="191.0" onAction="#handleSemThree" prefHeight="26.0" prefWidth="200.0" promptText="Choose Semester" />
+      <ComboBox fx:id="semE4" layoutX="92.0" layoutY="227.0" onAction="#handleSemFour" prefHeight="26.0" prefWidth="200.0" promptText="Choose Semester" />
+      <ComboBox fx:id="semE5" layoutX="92.0" layoutY="263.0" onAction="#handleSemFive" prefHeight="26.0" prefWidth="200.0" promptText="Choose Semester" />
+      <ComboBox fx:id="semE6" layoutX="92.0" layoutY="299.0" onAction="#handleSemSix" prefHeight="26.0" prefWidth="200.0" promptText="Choose Semester" />
+      <ComboBox fx:id="semE7" layoutX="92.0" layoutY="335.0" onAction="#handleSemSeven" prefHeight="26.0" prefWidth="200.0" promptText="Choose Semester" />
+      <ComboBox fx:id="semE8" layoutX="92.0" layoutY="371.0" onAction="#handleSemEight" prefHeight="26.0" prefWidth="200.0" promptText="Choose Semester" />
+      <TextField fx:id="semGpa2" alignment="CENTER" layoutX="326.0" layoutY="156.0" onAction="#handleEnterGPA2" onKeyTyped="#handleEnterGPA2" prefHeight="26.0" prefWidth="98.0" promptText="Enter Your GPA" />
+      <TextField fx:id="semGpa3" alignment="CENTER" layoutX="326.0" layoutY="191.0" onAction="#handleEnterGPA3" onKeyTyped="#handleEnterGPA3" prefHeight="26.0" prefWidth="98.0" promptText="Enter Your GPA" />
+      <TextField fx:id="semGpa4" alignment="CENTER" layoutX="326.0" layoutY="227.0" onAction="#handleEnterGPA4" onKeyTyped="#handleEnterGPA4" prefHeight="26.0" prefWidth="98.0" promptText="Enter Your GPA" />
+      <TextField fx:id="semGpa5" alignment="CENTER" layoutX="326.0" layoutY="263.0" onAction="#handleEnterGPA5" onKeyTyped="#handleEnterGPA5" prefHeight="26.0" prefWidth="98.0" promptText="Enter Your GPA" />
+      <TextField fx:id="semGpa6" alignment="CENTER" layoutX="326.0" layoutY="299.0" onAction="#handleEnterGPA6" onKeyTyped="#handleEnterGPA6" prefHeight="26.0" prefWidth="98.0" promptText="Enter Your GPA" />
+      <TextField fx:id="semGpa7" alignment="CENTER" layoutX="326.0" layoutY="335.0" onAction="#handleEnterGPA7" onKeyTyped="#handleEnterGPA7" prefHeight="26.0" prefWidth="98.0" promptText="Enter Your GPA" />
+      <TextField fx:id="semGpa8" alignment="CENTER" layoutX="326.0" layoutY="371.0" onAction="#handleEnterGPA8" onKeyTyped="#handleEnterGPA8" prefHeight="26.0" prefWidth="98.0" promptText="Enter Your GPA" />
+   </children>
+</AnchorPane>

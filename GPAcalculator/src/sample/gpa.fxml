@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="528.0" prefWidth="522.0" style="-fx-background-color: #FFF;" stylesheets="@../css/fullpackstyling.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.gpaController">
+   <children>
+      <Pane prefHeight="78.0" prefWidth="522.0" style="-fx-background-color: #FFF;">
+         <children>
+            <Text fill="#4d0194" fontSmoothingType="LCD" layoutX="129.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Semester GPA Calculator" textAlignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Emoji" size="26.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutY="78.0" prefHeight="449.0" prefWidth="522.0" style="-fx-background-color: #FFF;">
+         <children>
+            <Text layoutX="76.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course">
+               <font>
+                  <Font name="Segoe UI" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="215.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Credit">
+               <font>
+                  <Font name="Segoe UI" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="327.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Grade">
+               <font>
+                  <Font name="Segoe UI" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="450.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Grade">
+               <font>
+                  <Font name="Segoe UI" size="14.0" />
+               </font>
+            </Text>
+            <ComboBox fx:id="courseOne" layoutX="20.0" layoutY="80.0" onAction="#handleCourseOne" prefWidth="150.0" promptText="-" />
+            <ComboBox fx:id="courseTwo" layoutX="20.0" layoutY="121.0" onAction="#handleCourseTwo" prefWidth="150.0" promptText="-" />
+            <ComboBox fx:id="courseThree" layoutX="20.0" layoutY="163.0" onAction="#handleCourseThree" prefWidth="150.0" promptText="-" />
+            <ComboBox fx:id="courseFour" layoutX="20.0" layoutY="203.0" onAction="#handleCourseFour" prefWidth="150.0" promptText="-" />
+            <ComboBox fx:id="courseFive" layoutX="20.0" layoutY="244.0" onAction="#handleCourseFive" prefWidth="150.0" promptText="-" />
+            <ComboBox fx:id="courseSix" layoutX="20.0" layoutY="284.0" onAction="#handleCourseSix" prefWidth="150.0" promptText="-" />
+            <TextField fx:id="creditOne" editable="false" layoutX="211.0" layoutY="81.0" prefHeight="25.0" prefWidth="37.0" promptText="0.0" />
+            <TextField fx:id="creditTwo" editable="false" layoutX="211.0" layoutY="122.0" prefHeight="25.0" prefWidth="37.0" promptText="0.0" />
+            <TextField fx:id="creditThree" editable="false" layoutX="211.0" layoutY="164.0" prefHeight="25.0" prefWidth="37.0" promptText="0.0" />
+            <TextField fx:id="creditFour" editable="false" layoutX="211.0" layoutY="205.0" prefHeight="25.0" prefWidth="37.0" promptText="0.0" />
+            <TextField fx:id="creditFive" editable="false" layoutX="211.0" layoutY="245.0" prefHeight="25.0" prefWidth="37.0" promptText="0.0" />
+            <TextField fx:id="creditSix" editable="false" layoutX="211.0" layoutY="285.0" prefHeight="25.0" prefWidth="37.0" promptText="0.0" />
+            <ImageView fitHeight="25.0" fitWidth="26.0" layoutX="47.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/course.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="26.0" layoutX="191.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/chours.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="304.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/Gp.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="26.0" layoutX="422.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/grade.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="gpOne" alignment="CENTER" editable="false" layoutX="419.0" layoutY="81.0" prefHeight="25.0" prefWidth="73.0" promptText="0.0" />
+            <TextField fx:id="gpTwo" alignment="CENTER" editable="false" layoutX="419.0" layoutY="122.0" prefHeight="25.0" prefWidth="73.0" promptText="0.0" />
+            <TextField fx:id="gpThree" alignment="CENTER" editable="false" layoutX="419.0" layoutY="164.0" prefHeight="25.0" prefWidth="73.0" promptText="0.0" />
+            <TextField fx:id="gpFour" alignment="CENTER" editable="false" layoutX="419.0" layoutY="203.0" prefHeight="25.0" prefWidth="73.0" promptText="0.0" />
+            <TextField fx:id="gpFive" alignment="CENTER" editable="false" layoutX="419.0" layoutY="244.0" prefHeight="25.0" prefWidth="73.0" promptText="0.0" />
+            <TextField fx:id="gpSix" alignment="CENTER" editable="false" layoutX="419.0" layoutY="284.0" prefHeight="25.0" prefWidth="73.0" promptText="0.0" />
+            <Button fx:id="calculatorGpa" layoutX="14.0" layoutY="349.0" mnemonicParsing="false" onAction="#handleCalculateGPA" prefHeight="32.0" prefWidth="487.0" text="Calculate GPA" textFill="WHITE" />
+            <Text fx:id="fgpa" fill="#393939" layoutX="229.0" layoutY="433.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0.0">
+               <font>
+                  <Font name="Baskerville Old Face" size="52.0" />
+               </font>
+            </Text>
+            <ComboBox fx:id="gradeThree" layoutX="307.0" layoutY="164.0" onAction="#handleGradeThree" prefHeight="25.0" prefWidth="62.0" promptText="-" />
+            <ComboBox fx:id="gradeOne" layoutX="308.0" layoutY="81.0" onAction="#handleGradeOne" prefHeight="25.0" prefWidth="62.0" promptText="-" />
+            <ComboBox fx:id="gradeTwo" layoutX="307.0" layoutY="122.0" onAction="#handleGradeTwo" prefHeight="25.0" prefWidth="62.0" promptText="-" />
+            <ComboBox fx:id="gradeFour" layoutX="307.0" layoutY="205.0" onAction="#handleGradeFour" prefHeight="25.0" prefWidth="62.0" promptText="-" />
+            <ComboBox fx:id="gradeFive" layoutX="307.0" layoutY="245.0" onAction="#handleGradeFive" prefHeight="25.0" prefWidth="62.0" promptText="-" />
+            <ComboBox fx:id="gradeSix" layoutX="307.0" layoutY="285.0" onAction="#handleGradeSix" prefHeight="25.0" prefWidth="62.0" promptText="-" />
+            <Text layoutX="216.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hours">
+               <font>
+                  <Font name="Segoe UI" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="451.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Point">
+               <font>
+                  <Font name="Segoe UI" size="14.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
