@@ -37,7 +37,6 @@ public class GPA {
             totalGradePoints += gradePoints.get(j);
         }
 
-        double gpa = (double)Math.round((totalGradePoints/totalCreditHours)*100)/100;
-        return gpa;
+        return (double)Math.round((totalGradePoints/totalCreditHours)*100)/100;
     }
 }

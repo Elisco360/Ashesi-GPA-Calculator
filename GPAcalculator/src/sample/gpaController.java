@@ -8,6 +8,9 @@ import javafx.geometry.Pos;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
 import javafx.scene.control.Alert;
+import javafx.scene.paint.Color;
+import javafx.scene.paint.Paint;
+import javafx.scene.shape.Arc;
 import javafx.scene.text.Text;
 import javafx.util.Duration;
 import org.controlsfx.control.Notifications;
@@ -22,25 +25,14 @@ public class gpaController implements Initializable {
     @FXML private ComboBox<String> courseFour;
     @FXML private ComboBox<String> courseFive;
     @FXML private ComboBox<String> courseSix;
-    @FXML private TextField creditOne;
-    @FXML private TextField creditTwo;
-    @FXML private TextField creditThree;
-    @FXML private TextField creditFour;
-    @FXML private TextField creditFive;
-    @FXML private TextField creditSix;
     @FXML private ComboBox<String> gradeOne;
     @FXML private ComboBox<String> gradeTwo;
     @FXML private ComboBox<String> gradeThree;
     @FXML private ComboBox<String> gradeFour;
     @FXML private ComboBox<String> gradeFive;
     @FXML private ComboBox<String> gradeSix;
-    @FXML private TextField gpOne;
-    @FXML private TextField gpTwo;
-    @FXML private TextField gpThree;
-    @FXML private TextField gpFour;
-    @FXML private TextField gpFive;
-    @FXML private TextField gpSix;
-    @FXML private Text fgpa;
+    @FXML private Arc pie;
+    @FXML private Text fGpa = new Text("0.0");
     Course c = new Course();
     Grade gd = new Grade();
     GPA gpa = new GPA();
@@ -77,7 +69,6 @@ public class gpaController implements Initializable {
         if(userCourses.contains(c1)){
           alert();
         }
-        creditOne. setText(Double.toString(c.studentCourse(c1)));
         userCourses.add(0, c1);
     }
     public void handleCourseTwo(){
@@ -86,7 +77,6 @@ public class gpaController implements Initializable {
         if(userCourses.contains(c2)){
             alert();
         }
-        creditTwo. setText(Double.toString(c.studentCourse(c2)));
         userCourses.add(1, c2);
     }
     public void handleCourseThree(){
@@ -95,7 +85,6 @@ public class gpaController implements Initializable {
         if(userCourses.contains(c3)){
             alert();
         }
-        creditThree. setText(Double.toString(c.studentCourse(c3)));
         userCourses.add(2, c3);
     }
     public void handleCourseFour(){
@@ -104,7 +93,6 @@ public class gpaController implements Initializable {
         if(userCourses.contains(c4)){
             alert();
         }
-        creditFour. setText(Double.toString(c.studentCourse(c4)));
         userCourses.add(3, c4);
     }
     public void handleCourseFive(){
@@ -113,7 +101,7 @@ public class gpaController implements Initializable {
         if(userCourses.contains(c5)){
             alert();
         }
-        creditFive. setText(Double.toString(c.studentCourse(c5)));
+        userCourses.add(4, c5);
     }
     public void handleCourseSix(){
         userCourses.remove(5);
@@ -121,60 +109,67 @@ public class gpaController implements Initializable {
         if(userCourses.contains(c6)){
             alert();
         }
-        creditSix. setText(Double.toString(c.studentCourse(c6)));
         userCourses.add(5, c6);
     }
 
     public void handleGradeOne(){
         userGrades.remove(0);
         String g = gradeOne.getValue();
-        gpOne.setText(Double.toString(gd.studentGrade(g)));
         userGrades.add(0, g);
     }
     public void handleGradeTwo(){
         userGrades.remove(1);
         String g = gradeTwo.getValue();
-        gpTwo. setText(Double.toString(gd.studentGrade(g)));
         userGrades.add(1, g);
     }
     public void handleGradeThree(){
         userGrades.remove(2);
         String g = gradeThree.getValue();
-        gpThree. setText(Double.toString(gd.studentGrade(g)));
         userGrades.add(2, g);
     }
     public void handleGradeFour(){
         userGrades.remove(3);
         String g = gradeFour.getValue();
-        gpFour. setText(Double.toString(gd.studentGrade(g)));
         userGrades.add(3, g);
     }
     public void handleGradeFive(){
         userGrades.remove(4);
         String g = gradeFive.getValue();
-        gpFive. setText(Double.toString(gd.studentGrade(g)));
         userGrades.add(4, g);
     }
     public void handleGradeSix(){
         userGrades.remove(5);
         String g = gradeSix.getValue();
-        gpSix. setText(Double.toString(gd.studentGrade(g)));
         userGrades.add(5, g);
     }
 
     public void handleCalculateGPA(){
+        System.out.println(userCourses.toString());
+        System.out.println(userGrades.toString());
         for(int i=0; i < 6; i++){
             gpa.studentGPA(userCourses.get(i), userGrades.get(i));
         }
         double f = gpa.finalGPA();
-        fgpa.setText(Double.toString(f));
+        fGpa.setText(Double.toString(f));
+        //double v
         this.gpa = new GPA();
+        drawPie((f/4.0)*360);
+    }
+
+    public void drawPie(double v){
+        if(v >= 0 && v < 2.5){
+            pie.setFill(Paint.valueOf(String.valueOf(Color.color(1,0,0))));
+        }else if (v >= 2.5 && v < 3.5){
+            pie.setFill(Paint.valueOf(String.valueOf(Color.color(1,1,0))));
+        }else if (v >= 3.5){
+            pie.setFill(Paint.valueOf(String.valueOf(Color.color(0,1,0))));
+        }
+        pie.setLength(v);
     }
 
     public void courseList(Set set){
         System.out.println(set);
         List<String> s = sortSet(set);
-        System.out.println(s);
         courseNames.addAll(s);
     }
 

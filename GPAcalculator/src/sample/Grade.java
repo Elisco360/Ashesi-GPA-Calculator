@@ -19,7 +19,6 @@ public class Grade {
     }
 
     public double studentGrade(String letterGrade){
-        double g = grade.get(letterGrade);
-        return g;
+        return grade.get(letterGrade);
     }
 }

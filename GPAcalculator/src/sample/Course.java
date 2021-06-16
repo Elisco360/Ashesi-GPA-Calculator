@@ -121,7 +121,6 @@ public class Course {
     }
 
      public double studentCourse(String courseName){
-        double t = course.get(courseName);
-        return t;
+         return course.get(courseName);
     }
 }
