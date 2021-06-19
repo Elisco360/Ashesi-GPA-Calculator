@@ -17,7 +17,7 @@
       <Circle fill="WHITE" layoutX="474.0" layoutY="438.0" radius="65.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
       <Pane prefHeight="78.0" prefWidth="608.0" style="-fx-background-color: #FFF;">
          <children>
-            <Text fill="#861717" fontSmoothingType="LCD" layoutX="226.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GPA Calculator" textAlignment="CENTER">
+            <Text fill="#861717" fontSmoothingType="LCD" layoutX="227.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GPA Calculator" textAlignment="CENTER">
                <font>
                   <Font name="Segoe UI Emoji" size="26.0" />
                </font>

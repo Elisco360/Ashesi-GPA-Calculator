@@ -5,6 +5,7 @@ import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.geometry.Pos;
+import javafx.scene.Group;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
 import javafx.scene.control.Alert;
@@ -13,7 +14,6 @@ import javafx.scene.paint.Paint;
 import javafx.scene.shape.Arc;
 import javafx.scene.text.Text;
 import javafx.util.Duration;
-import org.controlsfx.control.Notifications;
 
 import java.net.URL;
 import java.util.*;
@@ -33,6 +33,8 @@ public class gpaController implements Initializable {
     @FXML private ComboBox<String> gradeSix;
     @FXML private Arc pie;
     @FXML private Text fGpa = new Text("0.0");
+    @FXML private Group gpaDoctor;
+
     Course c = new Course();
     Grade gd = new Grade();
     GPA gpa = new GPA();
@@ -144,8 +146,6 @@ public class gpaController implements Initializable {
     }
 
     public void handleCalculateGPA(){
-        System.out.println(userCourses.toString());
-        System.out.println(userGrades.toString());
         for(int i=0; i < 6; i++){
             gpa.studentGPA(userCourses.get(i), userGrades.get(i));
         }
@@ -168,7 +168,6 @@ public class gpaController implements Initializable {
     }
 
     public void courseList(Set set){
-        System.out.println(set);
         List<String> s = sortSet(set);
         courseNames.addAll(s);
     }
