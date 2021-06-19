@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="GPAcalculator">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/GPAcalculator/out/artifacts/GPAcalculator_jar/GPAcalculator.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

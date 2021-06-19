@@ -49,7 +49,7 @@ public class cgpaController implements Initializable {
         semE6.setItems(semesters);
         semE7.setItems(semesters);
         semE8.setItems(semesters);
-        for(int i=0; i < 8; i++){
+        for(int i=0; i < 9; i++){
             avgs.add(i, 0.0);
             userSems.add(i, "-");
         }

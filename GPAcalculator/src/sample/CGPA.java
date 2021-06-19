@@ -12,7 +12,7 @@ public class CGPA {
             if(averages.get(i) != 0.0){ avg+=averages.get(i); sems++; }
         }
         double f = avg/sems;
-        if(f != 4.0 && sems > 1){f = f+0.01;}
+        if(f != 4.0 && sems > 1){f = f-0.01;}
         f = (double) Math.round((f)*100)/100;
         System.out.println(f);
         return f;
