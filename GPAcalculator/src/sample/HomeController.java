@@ -32,6 +32,13 @@ public class HomeController implements Initializable {
         mainPane.setCenter(view);
     }
 
+    @FXML
+    public void handleDocClick(ActionEvent e){
+        FxmlLoader ldr = new FxmlLoader();
+        Pane view = ldr.getPage("doc.fxml");
+        mainPane.setCenter(view);
+    }
+
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {}

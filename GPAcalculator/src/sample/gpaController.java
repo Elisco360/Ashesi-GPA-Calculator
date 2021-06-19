@@ -33,7 +33,6 @@ public class gpaController implements Initializable {
     @FXML private ComboBox<String> gradeSix;
     @FXML private Arc pie;
     @FXML private Text fGpa = new Text("0.0");
-    @FXML private Group gpaDoctor;
 
     Course c = new Course();
     Grade gd = new Grade();
